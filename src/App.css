@@ -1,8 +1,8 @@
-.App {
+ .App {
   text-align: center;
 }
 
-.App-logo {
+/*.App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +35,91 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.flex-column {
+  height: 90%; 
+    width: 200px; 
+    position: fixed; 
+    top: 40px; 
+    left: 20px; 
+    background-color: #0C0A3E; 
+    color: white; 
+    align-items: center;
+    border-radius: 5px;
 }
+
+
+.nav-name {
+  font-size: 17px;
+  border: none;
+  background: none;
+  color: #FFFFEA;
+  transition: background-color 0.3s;
+   border-radius: 12px;
+
+}
+
+.nav-name:hover {
+  background-color: #FFFFEA;
+  color: #0C0A3E;
+  border-radius: 12px;
+}
+
+.content {
+  margin-left: 200px;
+    padding: 40px
+}
+
+.carousel{
+  padding-top: 20px;
+  height: 60%; 
+  border: #0C0A3E;
+  padding: 20px;
+  
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20px; 
+    
+}
+
+.search-area {
+  border-radius: 25px;
+  border-color: #0C0A3E;
+  width: 80%;
+  height: 50px;
+  margin-left: 10px;
+  
+  
+}
+input[type="text"]{
+  padding-left: 40px;
+}
+
+.search-button {
+  border-radius: 25px;
+  height: 50px;
+  width: 35%;
+  background-color: #0C0A3E;
+  color: #FFFFEA;
+}
+
+.search-button:hover {
+  background-color: #FFFFEA;
+  color: #0C0A3E;
+  border-radius: 25px;
+  border-color: #B33F62;
+}
+
+.img-background {
+  background-image: url("./images/DV200\ wallpaper\ light-02.png"); 
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
