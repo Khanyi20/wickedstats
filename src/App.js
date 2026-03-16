@@ -24,9 +24,9 @@ function App() {
   return (
     
 
-    
-    <BrowserRouter>
     <div className="img-background">
+    <BrowserRouter>
+    
       
 
     
@@ -50,10 +50,10 @@ function App() {
         <Route path="/image" element={<Image />} />
 
       </Routes>
-      </div>
+      
 
        
-    </BrowserRouter>
+    </BrowserRouter></div>
     
   );
 }

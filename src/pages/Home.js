@@ -9,7 +9,7 @@ import React from "react";
 // import'./Asset 1.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from "react-bootstrap";
-import first from './';
+// import first from './';
 //import Carousel from 'react-bootstrap/Carousel';
 
 
@@ -24,8 +24,9 @@ function Home() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={first} alt="Company Logo"
+      src="holder.js/800x400?text=Second slide&bg=282c34"
       alt="First slide"
+      
     />
     <Carousel.Caption>
       <h3>First slide label</h3>
