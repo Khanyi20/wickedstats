@@ -39,31 +39,47 @@
 
 .flex-column {
   height: 90%; 
-    width: 200px; 
+    width: 210px; 
     position: fixed; 
     top: 40px; 
     left: 20px; 
-    background-color: #0C0A3E; 
-    color: white; 
+    background-color: #FFFFEA; 
+    color: #0C0A3E; 
     align-items: center;
     border-radius: 5px;
 }
 
+.logoimage{
+  /* background-image: url(./images/bad\ apple\ dark.png); */
+ height: 45px;
+ width: 45px;
+ margin-top: 2px;
+}
+
+.brandimage{
+  height: 55px;
+ width: 180px;
+}
+
 
 .nav-name {
-  font-size: 17px;
+  margin-top: 20px ;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 21px;
   border: none;
-  background: none;
+  background-color: #0C0A3E;
   color: #FFFFEA;
   transition: background-color 0.3s;
-   border-radius: 12px;
+   border-radius: 20px;
 
 }
 
 .nav-name:hover {
-  background-color: #FFFFEA;
-  color: #0C0A3E;
-  border-radius: 12px;
+  background-color: #B33F62;
+  color: #FFFFEA;
+  border-radius: 20px;
 }
 
 .content {
@@ -90,6 +106,7 @@
 .search-area {
   border-radius: 25px;
   border-color: #0C0A3E;
+  background-color: #FFFFEA;
   width: 80%;
   height: 50px;
   margin-left: 10px;
