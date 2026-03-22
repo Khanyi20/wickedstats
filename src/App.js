@@ -14,6 +14,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import logo from "./images/bad apple dark.png";
 import brandname from "./images/Brand name.png";
+import { BsEmojiAngryFill } from "react-icons/bs";
+import { BsEmojiAstonishedFill } from "react-icons/bs";
+import { BsEmojiGrimaceFill } from "react-icons/bs";
 //import Image from "./pages/VillainImage";
 
 
@@ -40,6 +43,12 @@ function App() {
   <Link to="/" style={{marginTop: "10px"}} ><button className="nav-name">Home</button></Link>
   <Link to="about"  ><button className="nav-name">About</button></Link>
   <Link to="contact" ><button className="nav-name">Contact</button></Link>
+  <p className='nav-description'>Wickedstats lets users compare fictional villains based on characteristics like strength, intelligence, and abilities. It uses charts and side-by-side visuals to make differences to understand.</p>
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop:"5%"}}>
+  <BsEmojiAngryFill  className='emojiface'/>
+  <BsEmojiAstonishedFill className='emojiface' style={{marginLeft:"5px"}}/>
+  <BsEmojiGrimaceFill className='emojiface'style={{marginLeft:"5px"}}/>
+  </div>
 </Nav>
 
       <Routes>
