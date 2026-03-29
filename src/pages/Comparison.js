@@ -1,35 +1,40 @@
-import { useState, useEffect } from "react";
-
+import { useState } from "react";
+import ComparisonChart from "../components/ComparisonChart";
+import VillainCard from "../components/VillainCard";
+import VillainCharts from "../components/VillainCharts";
+import VillainCharts2 from "../components/VillainCharts2";
+import VillainSelector from "../components/StatSelector";
 
 function Comparison() {
+  const [villain1, setVillain1] = useState(null);
+  const [villain2, setVillain2] = useState(null);
+  const [selectedStat, setSelectedStat] = useState("power");
 
-  
-  const [data, setData] = useState(null);
+  return (
+    <div className="content">
+      <h1>Villain Comparison</h1>
+      <VillainSelector setVillain1={setVillain1} setVillain2={setVillain2}/>
 
-  useEffect(() => {
-    fetch("https://superhero-search.p.rapidapi.com/api/villains")
-      .then (response => response.json())
-      .then (data => setData(data))
-      .catch (error => console.error("Error fetching data", error));
-    // async function grabData() {
-    //   let response = await fetch(URL)
-    //   let res = await response.json()
-    //   setDate(res)
-    
+      {/* Stats are selected here */}
+      <select onChange={(e) => setSelectedStat(e.target.value)}>
+        <option value={"power"}>Power</option>
+        <option value={"speed"}>Speed</option>
+        <option value={"strength"}>Strength</option>
+        <option value={"intelligence"}>Intelligence</option>
+      </select>
 
-    //grabData()
-    
-  }, []);
-
-  
-  return( 
-    
-      <div>
-        <h2>Contact Page</h2>
-        {data? <h1>{data.title}</h1>: <p>Loading...</p>}
+      <div style={{display: "flex"}}>
+        <VillainCard villain={villain1}/>
+        <VillainCard villain={villain2}/>
       </div>
-    );
-    
+
+      <VillainCharts villain={villain1}/>
+      <VillainCharts2 villain={villain2}/>
+
+      <ComparisonChart villain1={villain1} villain2={villain2} selectedStat={selectedStat}/>
+    </div>
+  );
+
 }
 
 export default Comparison;

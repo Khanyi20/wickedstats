@@ -20,6 +20,9 @@ import { BsEmojiGrimaceFill } from "react-icons/bs";
 
 
 function App() {
+  // return <Home /> 
+  // return <Comparison/>
+  
   return (
     
 
