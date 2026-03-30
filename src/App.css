@@ -115,8 +115,8 @@ background-image: url(./images/bad\ apple\ dark.png);
   border-radius: 25px;
   border-color: #0C0A3E;
   background-color: #FFFFEA;
-  width: 80%;
-  height: 50px;
+  width: 50%;
+  height: 40px;
   margin-left: 10px;
   
   
@@ -127,8 +127,8 @@ input[type="text"]{
 
 .search-button {
   border-radius: 25px;
-  height: 50px;
-  width: 35%;
+  height: 40px;
+  width: 25%;
   background-color: #0C0A3E;
   color: #FFFFEA;
 }
@@ -143,8 +143,17 @@ input[type="text"]{
 .img-background {
   background-image: url("./images/8x/Asset3.png"); 
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
 }
-
+.info-container {
+  color: #FFFFEA;
+}
 
 

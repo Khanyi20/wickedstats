@@ -12,7 +12,7 @@ function Comparison() {
 
   return (
     <div className="content">
-      <h1>Villain Comparison</h1>
+      <h1 style={{color: "#ffffea", marginBottom: "20px"}}>Villain Comparison</h1>
       <VillainSelector setVillain1={setVillain1} setVillain2={setVillain2}/>
 
       {/* Stats are selected here */}
