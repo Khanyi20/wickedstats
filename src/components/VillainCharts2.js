@@ -32,15 +32,23 @@ function VillainCharts2({villain}) {
                     stats.strength,
                     stats.intelligence
                 ],
+                backgroundColor: [
+                '#F9564F',
+                '#5B7B7A',
+                '#B33F62',
+                '#0C0A3E'
+                ],
+                hoverOffset: 4
             },
         ],
     };
 
     return(
-        <div>
-            <h4>{villain.name} Stats</h4>
-            <Pie data={data}/>
-            
+        <div className="group-Villain">
+            <h4 style={{color: "#ffffea"}}>{villain.name} Stats</h4>
+            <div className="charts">
+            <Pie data={data} />
+            </div>
         </div>
     );
 }

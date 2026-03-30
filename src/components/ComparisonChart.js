@@ -18,7 +18,7 @@ ChartJS.register(
 );
 
 function ComparisonChart({villain1, villain2, statsSelector}) {
-    if(!villain1 || villain2) return(null);
+    if(!villain1 || !villain2) return null;
 
     const data = {
         labels: [villain1.name, villain2.name],
@@ -30,14 +30,24 @@ function ComparisonChart({villain1, villain2, statsSelector}) {
                     villain2.powerstats[statsSelector],
 
                 ],
+                backgroundColor: [
+      '#0c0a3eb7',
+      '#b33f62a2'
+    ],
+    borderColor: [
+      '#ff6384',
+      '#ff9f40'
+    ],
             },
         ],
     };
 
     return(
         <div>
-            <h3>Comparison: {statsSelector}</h3>
+            <h3 style={{color: "#ffffea"}}>Comparison: {statsSelector}</h3>
+            <div className="compare-chart">
             <Bar data={data}/>
+            </div>
         </div>
     );
 }

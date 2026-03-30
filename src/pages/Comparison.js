@@ -16,20 +16,23 @@ function Comparison() {
       <VillainSelector setVillain1={setVillain1} setVillain2={setVillain2}/>
 
       {/* Stats are selected here */}
-      <select onChange={(e) => setStatsSelector(e.target.value)}>
-        <option value={"power"}>Power</option>
-        <option value={"speed"}>Speed</option>
-        <option value={"strength"}>Strength</option>
-        <option value={"intelligence"}>Intelligence</option>
+      <div className="bararea">
+      <select  className="barchart" onChange={(e) => setStatsSelector(e.target.value)}>
+        <option value="power">Power</option>
+        <option value="speed">Speed</option>
+        <option value="strength">Strength</option>
+        <option value="intelligence">Intelligence</option>
       </select>
-
-      <div style={{display: "flex"}}>
-        <VillainCard villain={villain1}/>
-        <VillainCard villain={villain2}/>
       </div>
 
-      <VillainCharts villain={villain1}/>
+      <div className="group-Villain" style={{display: "flex"}}>
+        <VillainCard villain={villain1}/>
+        <VillainCharts villain={villain1}/>
+      </div>
+      <div className="group-Villain" style={{display: "flex"}}>
+      <VillainCard villain={villain2}/>
       <VillainCharts2 villain={villain2}/>
+      </div>
 
       <ComparisonChart villain1={villain1} villain2={villain2} statsSelector={statsSelector}/>
     </div>

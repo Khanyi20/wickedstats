@@ -157,3 +157,79 @@ input[type="text"]{
 }
 
 
+.dropdown {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  width: 30vw;
+  border-radius: 25px;
+  color: #FFFFEA;
+  background-color: #0C0A3E;
+}
+
+.drop-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barchart {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  width: 30vw;
+  border-radius: 25px;
+  color: #FFFFEA;
+  background-color: #0C0A3E;
+}
+
+.bararea {
+   align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+}
+
+.card-villain {
+  width: 25vw;
+  margin: 10px;
+  background-image: linear-gradient(to right, #B33F62, #FFFFEA);
+  border: none;
+  border-radius: 20px;
+  color: #FFFFEA;
+}
+
+.group-Villain {
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.charts {
+  height: 60vh;
+  width: 30vw;
+  color:#0C0A3E;
+  background-color: #FFFFEA;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.charts2 {
+  height: 60vh;
+  width: 30vw;
+  color:#FFFFEA;
+  background-color: #0C0A3E;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.compare-chart {
+  background-color: #FFFFEA;
+}
+
+

@@ -7,8 +7,8 @@ function VillainCard({villain}) {
     if (!villain) return(null);
 
     return(
-        <Card style={{ width: '18rem', margin: '10px' }}>
-            <Card.Img variant="top" src={villain?.images?.sm} />
+        <Card className='card-villain' >
+            <Card.Img variant="top" src={villain?.images?.sm} style={{height: "50vh"}} />
             <Card.Body>
                 <Card.Title>{villain.name}</Card.Title>
                 <p>Power: {villain.powerstats.power}</p>

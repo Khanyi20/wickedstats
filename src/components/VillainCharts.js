@@ -32,15 +32,22 @@ function VillainCharts({villain}) {
                     stats.strength,
                     stats.intelligence
                 ],
+                backgroundColor: '#0C0A3E',
+                borderColor: '#B33F62',
+                pointBackgroundColor: '#B33F62',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#B33F62'
             },
         ],
     };
 
     return(
         <div>
-            <h4>{villain.name} Stats</h4>
+            <h4 style={{color: "#ffffea"}}>{villain.name} Stats</h4>
+            <div className="charts">
             <Radar data={data}/>
-            
+            </div>
             
         </div>
     );

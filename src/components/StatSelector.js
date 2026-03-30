@@ -22,9 +22,9 @@ function VillainSelector({setVillain1, setVillain2}) {
 
 
     return(
-        <div>
-            <select onChange={(e) => setVillain1(villains[e.target.value])}>
-                <option>Select Villain 1</option>
+        <div className="drop-area" >
+            <select onChange={(e) => setVillain1(villains[e.target.value])} className="dropdown">
+                <option  >Select Villain 1</option>
                 { villains.map((v, index) => (
                     <option key={index} value={index}>
                         {v.name}
@@ -32,8 +32,8 @@ function VillainSelector({setVillain1, setVillain2}) {
                 ))}
             </select>
 
-            <select onChange={(e) => setVillain2(villains[e.target.value])}>
-                <option>Select Villain 2</option>
+            <select onChange={(e) => setVillain2(villains[e.target.value])} className="dropdown">
+                <option  >Select Villain 2</option>
                 { villains.map((v, index) => (
                     <option key={index} value={index}>
                         {v.name}
