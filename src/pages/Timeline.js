@@ -1,5 +1,15 @@
+import TimeLineChart from "../components/TimeLineChart";
+
+
+ 
 function Timeline() {
-  return <h2>Timeline Page</h2>;
+  return(
+
+  <div className="content">
+  <TimeLineChart />
+  </div>
+  
+ ) 
 }
 
 export default Timeline;

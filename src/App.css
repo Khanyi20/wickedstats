@@ -230,6 +230,12 @@ input[type="text"]{
 
 .compare-chart {
   background-color: #FFFFEA;
+  border-radius: 12px;
+}
+
+
+.timechart {
+  background-color: #FFFFEA;
 }
 
 
