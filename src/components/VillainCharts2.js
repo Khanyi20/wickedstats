@@ -38,6 +38,8 @@ function VillainCharts2({villain}) {
                 '#B33F62',
                 '#0C0A3E'
                 ],
+
+                // can change look by hovering over object
                 hoverOffset: 4
             },
         ],
@@ -46,6 +48,7 @@ function VillainCharts2({villain}) {
     return(
         <div className="group-Villain">
             <h4 style={{color: "#ffffea"}}>{villain.name} Stats</h4>
+            
             <div className="charts">
             <Pie data={data} />
             </div>

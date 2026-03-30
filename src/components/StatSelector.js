@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 
 function VillainSelector({setVillain1, setVillain2}) {
-    const [villains, setVillains] = useState([]);
+    const [villains, setVillains] = useState([]);//[] creates an empty array to store data fetched from API
 
     useEffect (() => {
+
+        //async function is created to fetch API
         const fetchVillains = async () => {
             const response = await fetch(
                 "https://superhero-search.p.rapidapi.com/api/villains",
@@ -15,17 +17,23 @@ function VillainSelector({setVillain1, setVillain2}) {
                 }
             );
             const data = await response.json();
-            setVillains(data);
+            setVillains(data); // keep API data in state
         };
-            fetchVillains();
-    }, []);
+            fetchVillains(); //function is called 
+    }, []); // empty array will run once to prevent errors of many requests
 
 
     return(
         <div className="drop-area" >
+            
+            {/* creates dropdown to choose villain from data stored in array */}
             <select onChange={(e) => setVillain1(villains[e.target.value])} className="dropdown">
                 <option  >Select Villain 1</option>
+
+                {/* loops through villains state for villain data */}
                 { villains.map((v, index) => (
+
+                    // key creates unique id for the villain object and value chooses which villain object to use
                     <option key={index} value={index}>
                         {v.name}
                     </option>

@@ -1,3 +1,5 @@
+//importing chart components from chart.js to use to analyse data from API
+
 import {
  Chart as ChartJS,
  RadialLinearScale,
@@ -9,6 +11,8 @@ import {
 
 import { Radar } from "react-chartjs-2";
 
+
+//registers the elements used to create the specific chart that was chosen
 ChartJS.register(
  RadialLinearScale,
  CategoryScale,
@@ -22,10 +26,14 @@ function VillainCharts({villain}) {
 
     const stats = villain.powerstats;
     const data = {
+        // names that will show on axes
         labels: ["Power", "Speed", "Strength", "Intelligence"],
         datasets: [
             {
+                //chart title
                 label: villain.name,
+
+                // Values to be used on the chart
                 data: [
                     stats.power,
                     stats.speed,
@@ -46,6 +54,8 @@ function VillainCharts({villain}) {
         <div>
             <h4 style={{color: "#ffffea"}}>{villain.name} Stats</h4>
             <div className="charts">
+
+                {/* renders through chart using the data fetched from API(villain)  */}
             <Radar data={data}/>
             </div>
             

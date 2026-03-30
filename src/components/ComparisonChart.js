@@ -17,10 +17,13 @@ ChartJS.register(
  LineElement
 );
 
+
 function ComparisonChart({villain1, villain2, statsSelector}) {
+
     if(!villain1 || !villain2) return null;
 
     const data = {
+        // lables of the x-axis
         labels: [villain1.name, villain2.name],
         datasets: [
             {
@@ -31,13 +34,13 @@ function ComparisonChart({villain1, villain2, statsSelector}) {
 
                 ],
                 backgroundColor: [
-      '#0c0a3eb7',
-      '#b33f62a2'
-    ],
-    borderColor: [
-      '#ff6384',
-      '#ff9f40'
-    ],
+                '#0c0a3eb7',
+                '#b33f62a2'
+                ],
+                borderColor: [
+                '#ff6384',
+                '#ff9f40'
+                ],
             },
         ],
     };
@@ -46,6 +49,8 @@ function ComparisonChart({villain1, villain2, statsSelector}) {
         <div>
             <h3 style={{color: "#ffffea"}}>Comparison: {statsSelector}</h3>
             <div className="compare-chart">
+
+                {/* displays the findings on the bar chart */}
             <Bar data={data}/>
             </div>
         </div>

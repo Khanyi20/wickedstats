@@ -7,24 +7,27 @@ import {Row} from "react-bootstrap";
 import {Col} from "react-bootstrap";
 
 
-//import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function Home() {
+  //creating states that will store the data 
   const [results, setResults] = useState([]);
 
 
   return (
     <div className="content">
-    {/* className="container" */}
+    
         <div >
           <h1 style={{color:'#ffffea'}}>Villain Search</h1>
 
+          {/* Updates data whenever it refreshes */}
           <SearchVillains setResults={setResults} />
 
-           <div style={{ display: "flex", flexWrap: "wrap" }}>
+           <div  style={{ display: "flex", flexWrap: "wrap" }}>
+            {/* Loops through data */}
         {results.map((villain, index) => (
-            <div
+            <div className="search-card"
               key={index}
               style={{
                 border: "1px solid gray",
@@ -35,18 +38,19 @@ function Home() {
 
               value={index}
             >
-              <h3>{villain.name}</h3>
+              <h3 style={{color: "#FFFFEA", borderRadius: "12px"}}>{villain.name}</h3>
 
               <img
                 src={villain?.images?.sm}
                 alt={villain.name}
                 style={{ width: "100%" }}
               />
-
-              <p>Power: {villain?.powerstats?.power}</p>
+              <div style={{color: "#FFFFea"}}>
+              <p>Power: {villain?.powerstats?.power}</p>  {/* using specific data from API through Chaining to be accurate in find the data */}
               <p>Speed: {villain?.powerstats?.speed}</p>
               <p>Strength: {villain?.powerstats?.strength}</p>
               <p>Intelligence: {villain?.powerstats?.intelligence}</p>
+              </div>
             </div>
           ))
         }
@@ -59,7 +63,7 @@ function Home() {
           <Container>
             <Row>
               <Col >
-                <Image src={Bad_apple_colour} alt="No Image found" style={{height: "170px", width: "170px"}}/>
+                <Image src={Bad_apple_colour} alt="No Image found" style={{height: "170px", width: "170px", opacity: "70%"}}/>
               </Col>
               
             </Row>

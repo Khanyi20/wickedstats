@@ -37,20 +37,22 @@ function TimeLineChart() {
 
                 if (!appearance) return null
 
-                const match = appearance.match(/\d{4}/);
+                const match = appearance.match(/\d{4}/); // method to find any 4 digit number
 
                 if (!match) return null;
 
-                const year = parseInt(match[0]);
+                const year = parseInt(match[0]); // converts data findings into string and returns an integer
 
+
+                // creates points on the chart
                 return {
                     x: year,
                     y: index,
                     name: v.name,
                 };
             })
-            .filter(Boolean)
-            .sort((a, b) => a.x - b.x);
+            .filter(Boolean) // removes any invalid data
+            .sort((a, b) => a.x - b.x); //sorts oldest data set to newest data set
 
             setTimeLineData(processdata);
         };
@@ -78,12 +80,14 @@ function TimeLineChart() {
         },
       },
       y: {
-        display: false, // hide meaningless vertical axis
+        display: false, // to hide as it has no use
       },
     },
     plugins: {
       tooltip: {
         callbacks: {
+
+          // function will display data info when hovering over it
           label: function (context) {
             return context.raw.name + " (" + context.raw.x + ")";
           },
