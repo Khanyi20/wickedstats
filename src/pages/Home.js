@@ -19,7 +19,7 @@ function Home() {
     <div className="content">
     
         <div >
-          <h1 style={{color:'#ffffea'}}>Villain Search</h1>
+          <h1 style={{color:'#ffffea'}}>Villain Home</h1>
 
           {/* Updates data whenever it refreshes */}
           <SearchVillains setResults={setResults} />
