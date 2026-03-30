@@ -8,7 +8,7 @@ import VillainSelector from "../components/StatSelector";
 function Comparison() {
   const [villain1, setVillain1] = useState(null);
   const [villain2, setVillain2] = useState(null);
-  const [selectedStat, setSelectedStat] = useState("power");
+  const [statsSelector, setStatsSelector] = useState("power");
 
   return (
     <div className="content">
@@ -16,7 +16,7 @@ function Comparison() {
       <VillainSelector setVillain1={setVillain1} setVillain2={setVillain2}/>
 
       {/* Stats are selected here */}
-      <select onChange={(e) => setSelectedStat(e.target.value)}>
+      <select onChange={(e) => setStatsSelector(e.target.value)}>
         <option value={"power"}>Power</option>
         <option value={"speed"}>Speed</option>
         <option value={"strength"}>Strength</option>
@@ -31,7 +31,7 @@ function Comparison() {
       <VillainCharts villain={villain1}/>
       <VillainCharts2 villain={villain2}/>
 
-      <ComparisonChart villain1={villain1} villain2={villain2} selectedStat={selectedStat}/>
+      <ComparisonChart villain1={villain1} villain2={villain2} statsSelector={statsSelector}/>
     </div>
   );
 

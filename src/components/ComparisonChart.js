@@ -1,4 +1,21 @@
+import {
+ Chart as ChartJS,
+ BarElement,
+ CategoryScale, 
+ LinearScale,   
+ PointElement,  
+ LineElement    
+} from "chart.js";
+
 import { Bar } from "react-chartjs-2";
+
+ChartJS.register(
+ BarElement,
+ CategoryScale,
+ LinearScale,
+ PointElement,
+ LineElement
+);
 
 function ComparisonChart({villain1, villain2, statsSelector}) {
     if(!villain1 || villain2) return(null);
@@ -9,8 +26,8 @@ function ComparisonChart({villain1, villain2, statsSelector}) {
             {
                 label: statsSelector,
                 data: [
-                    villain1.powerstat[statsSelector],
-                    villain2.powerstat[statsSelector],
+                    villain1.powerstats[statsSelector],
+                    villain2.powerstats[statsSelector],
 
                 ],
             },

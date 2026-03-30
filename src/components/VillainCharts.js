@@ -1,18 +1,16 @@
 import {
  Chart as ChartJS,
  RadialLinearScale,
- ArcElement,
  CategoryScale, 
  LinearScale,   
  PointElement,  
  LineElement    
 } from "chart.js";
 
-import { Pie, Radar } from "react-chartjs-2";
+import { Radar } from "react-chartjs-2";
 
 ChartJS.register(
  RadialLinearScale,
- ArcElement,
  CategoryScale,
  LinearScale,
  PointElement,
@@ -42,7 +40,7 @@ function VillainCharts({villain}) {
         <div>
             <h4>{villain.name} Stats</h4>
             <Radar data={data}/>
-            <Pie data={data}/>
+            
             
         </div>
     );
