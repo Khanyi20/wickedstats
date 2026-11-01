@@ -97,7 +97,16 @@
   text-decoration: none;
 }
 
+
+
+
+
 /* Home Page Styles */
+
+
+
+
+
 
 .home-page {
   position: relative;
@@ -123,45 +132,24 @@
   color: #ffffea;
 }
 
-.home-title {
-  margin: 14px 0 8px;
-  font-size: clamp(2.2rem, 3vw, 3rem);
-  color: #ffffea;
-}
 
-.home-subtitle {
-  margin: 0;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 234, 0.82);
-}
 
-.stat-box {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  background: rgba(12, 10, 62, 0.72);
-  border: 1px solid rgba(255, 255, 234, 0.18);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
-}
 
-.stat-box span {
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 234, 0.72);
-}
+/* Search Area */
 
-.stat-box strong {
-  font-size: 1.35rem;
-  color: #ffffea;
-}
+
+
 
 .search-panel {
   margin-bottom: 32px;
 }
+
+
+
+
+/* Show results area */
+
+
 
 .results-panel,
 .info-section {
@@ -210,24 +198,6 @@
   background: rgba(255, 255, 234, 0.15);
 }
 
-.villain-stats {
-  display: grid;
-  gap: 8px;
-}
-
-.villain-stats p {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  margin: 0;
-  color: #ffffea;
-  font-size: 0.94rem;
-}
-
-.villain-stats span {
-  color: rgba(255, 255, 234, 0.75);
-}
-
 .empty-state {
   padding: 20px 18px;
   border-radius: 18px;
@@ -236,14 +206,10 @@
   border: 1px solid rgba(255, 255, 234, 0.18);
 }
 
+/* Information Section */
+
 .info-section {
   margin-top: 36px;
-}
-
-.api-graphic {
-  width: 170px;
-  height: 170px;
-  opacity: 0.7;
 }
 
 .info-container {
@@ -275,10 +241,6 @@
     gap: 8px;
   }
 
-  .nav-description {
-    display: none;
-  }
-
   .page-content {
     padding: 96px 12px 24px;
   }
@@ -298,14 +260,6 @@
   }
 }
 
-
-.container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding-top: 10px; 
-    
-}
 
 .search-area {
   border-radius: 25px;
@@ -407,18 +361,7 @@ input[type="text"]{
   backdrop-filter: blur(12px);
 }
 
-.charts2 {
-  height: 60vh;
-  width: 30vw;
-  color:#FFFFEA;
-  background-color: rgba(12, 10, 62, 0.58);
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 234, 0.18);
-  backdrop-filter: blur(12px);
-}
+
 
 .compare-chart {
   background-color: rgba(12, 10, 62, 0.58);
@@ -428,7 +371,6 @@ input[type="text"]{
   backdrop-filter: blur(12px);
   border-radius: 12px;
 }
-
 
 .timechart {
   background-color: rgba(12, 10, 62, 0.58);
