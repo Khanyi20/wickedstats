@@ -8,12 +8,6 @@ import BlurText from '../component/BlurText';
 function Home() {
   const [results, setResults] = useState([]);
 
-  const quickStats = [
-    { label: 'Villains tracked', value: '120+' },
-    { label: 'Power ratings', value: '4 metrics' },
-    { label: 'Compare mode', value: 'Live' }
-  ];
-
   return (
     <div className="home-page">
       <section className="home-hero">
@@ -24,20 +18,9 @@ function Home() {
             animateBy="words"
             className="hero-title"
           />
-          <h1 className="home-title">Villain Home</h1>
-          <p className="home-subtitle">
-            Search iconic antagonists, compare their power profiles, and spot the traits that make them dangerous.
-          </p>
         </div>
 
-        <div className="hero-panel">
-          {quickStats.map(stat => (
-            <div key={stat.label} className="stat-box">
-              <span>{stat.label}</span>
-              <strong>{stat.value}</strong>
-            </div>
-          ))}
-        </div>
+        
       </section>
 
       <section className="search-panel">
