@@ -12,9 +12,6 @@
 [![Bootstrap](https://img.shields.io/badge/React%20Bootstrap-2-7952B3?logo=bootstrap&logoColor=white)](https://react-bootstrap.github.io/)
 [![RapidAPI](https://img.shields.io/badge/API-RapidAPI-0055DA?logo=rapidapi&logoColor=white)](https://rapidapi.com/)
 
-<img src="docs/images/hero.png" alt="WickedStats home page" width="85%" />
-
-</div>
 
 ---
 
@@ -26,7 +23,7 @@
 4. [Development Process](#development-process)
 5. [Final Outcome](#final-outcome)
 6. [Conclusion](#conclusion)
-7. [License, Contact and Acknowledgements](#license)
+
 
 ---
 
