@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Timeline from './pages/Timeline';
 import Comparison from './pages/Comparison';
 import Logo from './images/bad apple dark.png';
+import AppName from './images/Brand name.png';
 
 import ColorBends from './component/ColorBends';
 
@@ -40,9 +41,10 @@ function App() {
         <div className="app-content">
           
           <Nav className="top-navigation" aria-label="Main navigation">
-            
+            <div className="logo-container">
               <img src={Logo} alt="WickedStats Logo" className="logoimage" />
-            
+              <img src={AppName} alt="WickedStats" className="appnameimage" />
+            </div>
             <div className="navigation-links">
               <Link to="/" className="nav-name">Home</Link>
               <Link to="/comparison" className="nav-name">Comparison</Link>

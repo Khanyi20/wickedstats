@@ -12,7 +12,7 @@ function VillainCard({villain}) {
 
     return(
         <Card className='card-villain' >
-            <Card.Img variant="top" src={villain?.images?.sm} style={{height: "50vh"}} />
+            <Card.Img variant="top" src={villain?.images?.sm} alt={`${villain.name}`} />
             <Card.Body>
                 {/* displays name of villain fetched from the villain state storing the Data */}
                 <Card.Title>{villain.name}</Card.Title>

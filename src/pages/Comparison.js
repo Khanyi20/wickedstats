@@ -33,13 +33,15 @@ function Comparison() {
       </select>
       </div>
 
-      <div className="group-Villain" style={{display: "flex"}}>
-        <VillainCard villain={villain1}/>
-        <VillainCharts villain={villain1}/>
-      </div>
-      <div className="group-Villain" style={{display: "flex"}}>
-      <VillainCard villain={villain2}/>
-      <VillainCharts2 villain={villain2}/>
+      <div className="villain-comparison-grid">
+        <section className="group-Villain">
+          <VillainCard villain={villain1}/>
+          <VillainCharts villain={villain1}/>
+        </section>
+        <section className="group-Villain">
+          <VillainCard villain={villain2}/>
+          <VillainCharts2 villain={villain2}/>
+        </section>
       </div>
 
       <ComparisonChart villain1={villain1} villain2={villain2} statsSelector={statsSelector}/>

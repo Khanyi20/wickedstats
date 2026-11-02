@@ -51,7 +51,7 @@ function VillainCharts({villain}) {
     };
 
     return(
-        <div>
+        <div className="villain-stats-chart">
             <h4 style={{color: "#ffffea"}}>{villain.name} Stats</h4>
             <div className="charts">
 
