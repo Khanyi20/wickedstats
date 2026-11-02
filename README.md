@@ -1,6 +1,6 @@
 
 
-# WickedStates
+# WickedStats
 ### Explore, compare and chart your favourite comic-book villains
 
 **Type of solution:** Frontend single-page web application (React) consuming a third-party REST API
